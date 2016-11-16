@@ -1,7 +1,5 @@
-import sys
-import os, time
-import subprocess
- 
+import os
+
 path = raw_input("PATH:")
 print path
 listing = os.listdir(path)
@@ -10,6 +8,6 @@ for filename in listing:
         pass
     else:
         print "current file is: " + filename
-        newname=filename.replace('.jpg','.bmp')
+        newname = filename.replace('.jpg', '.bmp')
         print newname
-        os.rename(path+'\\'+filename,newname)
+        os.rename(path + '\\' + filename, newname)

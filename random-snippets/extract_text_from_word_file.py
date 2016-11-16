@@ -2,7 +2,10 @@
 #tree on Windows into a corresponding text file.
 #With the PyWin32 extension,we can access Word itself,through COM,to perform
 #the conversion:
-import fnmatch, os, sys, win32com.client
+import fnmatch
+import os
+import sys
+import win32com.client
 wordapp = win32com.client.gencache.EnsureDispatch("Word.Application")
 try:
     for path, dirs, files in os.walk(sys.argv[1]):

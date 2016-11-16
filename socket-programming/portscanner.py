@@ -8,7 +8,7 @@ r2 = int (raw_input("\t Enter the last port number\t"))
 print "*"*40
 print "\n Mohit's Scanner is working on ",rmip
 print "*"*40
-t1= datetime.now()
+t1 = datetime.now()
 try:
  for port in range(r1,r2):
   sock= socket.socket(socket.AF_INET,socket.SOCK_STREAM)
